@@ -1,0 +1,35 @@
+.m-scene {
+    /** Basic styles for an animated element */
+        }
+    .scene_element {
+      animation-duration: 3.5s;
+      transition-timing-function: ease-in;
+      animation-fill-mode: both;
+  
+    }
+  
+    .scene_element--fadeinleft {
+      animation-name: fadeIn;
+    }
+    @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  #about{
+    background:linear-gradient(to right,#f857a6,#ff5858);
+}
+#about{
+    height:600px;
+}
+p{
+    font-size:120%;
+    color:white;
+    text-align:justify;
+}

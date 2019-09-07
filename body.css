@@ -1,0 +1,96 @@
+
+ .m-scene {
+    /** Basic styles for an animated element */
+        }
+    .scene_element {
+      animation-duration: 3.5s;
+      transition-timing-function: ease-in;
+      animation-fill-mode: both;
+  
+    }
+  
+    .scene_element--fadeinup {
+      animation-name: fadeInUp;
+    }
+    @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+            #home{
+                        background-color:#457fca;
+                        -webkit-animation: random 45s infinite;
+                        animation:random 45s infinite;
+                        animation-iteration-count: 1;
+                        background-size:cover;
+                    }
+                    @keyframes random{
+                        15% { background:linear-gradient(to right,#457fca,#457fca)} 
+                        30% { background:linear-gradient(to right,darkcyan,grey);  } 
+                        45% {  background:linear-gradient(to right,#3a6186,#89253e); } 
+                        60% { background:linear-gradient(to right,#00B4DB,#004e92); }
+                        75% { background:linear-gradient(to right,#C04848,#89216B); }  
+                        85% { background:linear-gradient(to right,#108dc7,#ef8e38); } 
+                        100% { background:linear-gradient(to right,#ad5389,#243B55); } 
+                    }
+                    @media only screen and{
+    body {
+        background-color:darkslategray;
+        -webkit-animation: random 45s infinite;
+        animation: random 45s infinite;
+        
+    }
+    @keyframes random{
+                        15% { background:linear-gradient(to right,#457fca,#457fca)} 
+                        30% { background:linear-gradient(to right,darkcyan,grey);  } 
+                        45% {  background:linear-gradient(to right,#3a6186,#89253e); } 
+                        60% { background:linear-gradient(to right,#00B4DB,#004e92); }
+                        75% { background:linear-gradient(to right,#C04848,#89216B); }  
+                        85% { background:linear-gradient(to right,#108dc7,#ef8e38); } 
+                        100% { background:linear-gradient(to right,#141E30,#243B55); } 
+                    }
+}
+#home{
+    height:800px;
+}
+
+#glow{
+    letter-spacing: 6px;
+    float: center;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; 
+    cursor: pointer
+    
+}
+#glow:hover{
+    letter-spacing:30px;
+}
+
+#font2{
+    letter-spacing: 2px;
+    margin-top:60px;
+}
+
+#btn{
+    background-color: transparent;
+    border: none;
+}
+
+#font3{
+text-align: center;
+margin-top:70px;
+
+}
+
+#font4{
+    letter-spacing: 2px;
+    margin-top:60px;
+}

@@ -1,79 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            About me :)
-        </title>
-        <!--[if IE]-->
-        <link href="body1.css" rel="stylesheet" type="text/css">
-        <!--[endif]-->
-        <!--metas-->
-        <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-        <!--bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/animations.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src='js/css3-animate-it.js'></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script src="js/jquery.inview.js"></script>
-<!--bootstrap ends-->
-    </head>
-    <body>
-            <div class="container">
-                    <div class="m-page scene_element scene_element--fadeinleft"> 
-                            <div id="nav">
-                                    <button type="button"  class="btn btn-default" data-toggle="collapse" data-target="#demo">
-                                            <span class="glyphicon glyphicon-align-justify"></span>  
-                                    </button>
-                                <style>
-                                      .btn{
-    background-color:transparent;
-    color:black;
-    border:none;
-    font-size:30px;
 
-}
-.btn:hover{
-   color:black;
-}
+<head>
+    <title>
+        About me :)
+    </title>
+    <!--[if IE]-->
+    <link href="body1.css" rel="stylesheet" type="text/css">
+    <!--[endif]-->
+    <!--metas-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='js/css3-animate-it.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <!--bootstrap ends-->
+</head>
 
-.navbar{
-    display: flex;
-justify-content: space-around;
- }
+<body>
+    <div class="container">
+        <div class="m-page scene_element scene_element--fadeinleft">
+            <div id="nav">
+                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                <div id="demo" class="collapse">
+                    <nav class="navbar navbar-default">
+                        <ul class="nav navbar-nav navbar-right">
 
-    </style>
-    <!--nav-start-->
-    <div id="demo" class="collapse">
-            <nav class="navbar navbar-default">
-                <ul class="nav navbar-nav navbar-right">
-                        
-                        <li>
-                          <a  href="index.html"><span class="glyphicon glyphicon-home"></span><font face="hominis,arial"  size="3">Home</font></a>
-                        </li>
-                        <li><a href="stuff.html"><span class="glyphicon glyphicon-globe"></span><font face="hominis,arial"  size="3">Stuff</font></a></li>
-                        <li><a href="javascript:myFunction()"><span class="glyphicon glyphicon-earphone"></span><font face="hominis,arial" size="3">Contact</font></a></li>
+                            <li>
+                                <a href="index.html"><span class="glyphicon nav_icon glyphicon-home"></span>
+                                    <p class="navbar_text" size="5">Home</p>
+                                </a>
+                            </li>
+                            <li><a href="javascript:myFunction()"><span
+                                        class="glyphicon nav_icon glyphicon-earphone"></span>
+                                    <p class="navbar_text" size="5">Contact</p>
+                                </a></li>
                         </ul>
-                      </nav>
-                      <script>
-                            function myFunction(){
-                                alert("mail to : kishoreravi24399@gmail.com");
-                            }
-                        </script>
+                    </nav>
+                </div>
+            </div>
+            <style>
+                .btn {
+                    background-color: transparent;
+                    color: black;
+                    border: none;
+                    font-size: 30px;
+                }
+
+                .btn:hover {
+                    color: black;
+                }
+
+                .navbar {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                .nav_icon {
+                    margin-left: 1.5rem;
+                    font-size: 2rem;
+                }
+
+                .navbar_text {
+                    font-size: 2rem;
+                }
+            </style>
+            <div class="about">
+                <div class="header">
+                    <p id="header_text_first">About</p>
+                    <p id="header_text_second">ME</p>
+                </div>
+                <div id="icon">
+                    <span class="glyphicon glyphicon-option-horizontal" style="color:white;font-size:40px;"></span>
+                </div>
+                <div id="nos">
+                    <div class="col-md-7 col-md-offset-3 wp2">
+                        <p><span class="glyphicon glyphicon-user"></span>Hello, my name is Kishore Jr, and I'm a recent
+                            graduate in Computer Science Engineering. I currently reside in Chennai and have a keen
+                            interest in Technology & Systems.
+                        </p>
+                        <p>
+                            My expertise lies in Full Stack Development, with a focus on React/Next Js for the frontend
+                            and Spring Boot, Nodejs, Django/Flask for the backend. I have experience working with both
+                            SQL and NoSQL databases, as well as AWS.
+                        </p>
+                        <p>
+                            When I'm not coding, I love to watch anime. My favorites are Naruto 🥷and Dragon Ball Z 🐉.
+                            In
+                            everything I do, I believe that hard work is key. I always strive to put in my best effort,
+                            and I believe that luck will come as a result of hard work.
+                        </p>
+                        <p>
+                            Thank you for taking the time to learn more about me. If you'd like to connect further,
+                            please feel free to reach out through my contact.</p>
+
+                        <section class="experience">
+                            <h2>Experience</h2>
+                            <div class="experience-item">
+                                <h3>Member of technical staff</h3>
+                                <p class="company">Athena health</p>
+                                <p class="date">Jan 2022 - present</p>
+                            </div>
+                            <div class="experience-item">
+                                <h3>Associate member of technical staff</h3>
+                                <p class="company">Athena health</p>
+                                <p class="date">oct 2020 - Jan 2022</p>
+                            </div>
+                            <div class="experience-item">
+                                <h3>Internship</h3>
+                                <p class="company">Athena health</p>
+                                <p class="date">Jan 2020 - Sep 2022</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--nav-ends-->
-    <div id="about">
-            <br>
-            <center><font face="Times new roman,arial,hominis"  size="10" color="white">ABOUT</font>&nbsp;&nbsp;&nbsp;&nbsp;<font face="verdana,times new roman,hominis" size="7" color="yellow" >ME</font></center>
-            <center><span class="glyphicon glyphicon-option-horizontal" style="color:white;font-size:40px;"></span></center>
-            <div id="nos">
-                  <center> <div  class="col-md-7 col-md-offset-3 wp2">
-             <p><span class="glyphicon glyphicon-user"></span>Hello, I am kishore ravi currently pursuing computer science and engineering doing so i am interested in coding and as of now i knows HTML5, CSS3, JS, PHP&SQL, C, C++, JAVA, RUBY. I am also intrested in creating web applications and as well mobile application,Now currently am in web development and programming field, not only web development i love data structures also and am oracle certified java programmer.And have the plan to create a Blog website for commercial purpose and learning new stuffs. From this i conclude that work hard on coding can makes and think different way. </p>
-                    </div></center>
-    </div>
-                        </div>
-    </body>
+    <script>
+        function myFunction() {
+            alert("mail to : kishoreravi24399@gmail.com");
+        }
+    </script>
+</body>
+
 </html>

@@ -1,5 +1,4 @@
-
- .m-scene {
+.m-scene {
     /** Basic styles for an animated element */
         }
     .scene_element {
@@ -22,56 +21,135 @@
       opacity: 1;
       transform: none;
     }
-  }
-            #home{
-                        background-color:#457fca;
-                        -webkit-animation: random 45s infinite;
-                        animation:random 45s infinite;
-                        animation-iteration-count: 1;
-                        background-size:cover;
-                    }
-                    @keyframes random{
-                        15% { background:linear-gradient(to right,#457fca,#457fca)} 
-                        30% { background:linear-gradient(to right,darkcyan,grey);  } 
-                        45% {  background:linear-gradient(to right,#3a6186,#89253e); } 
-                        60% { background:linear-gradient(to right,#00B4DB,#004e92); }
-                        75% { background:linear-gradient(to right,#C04848,#89216B); }  
-                        85% { background:linear-gradient(to right,#108dc7,#ef8e38); } 
-                        100% { background:linear-gradient(to right,#ad5389,#243B55); } 
-                    }
-                    @media only screen and{
-    body {
-        background-color:darkslategray;
-        -webkit-animation: random 45s infinite;
-        animation: random 45s infinite;
-        
-    }
-    @keyframes random{
-                        15% { background:linear-gradient(to right,#457fca,#457fca)} 
-                        30% { background:linear-gradient(to right,darkcyan,grey);  } 
-                        45% {  background:linear-gradient(to right,#3a6186,#89253e); } 
-                        60% { background:linear-gradient(to right,#00B4DB,#004e92); }
-                        75% { background:linear-gradient(to right,#C04848,#89216B); }  
-                        85% { background:linear-gradient(to right,#108dc7,#ef8e38); } 
-                        100% { background:linear-gradient(to right,#141E30,#243B55); } 
-                    }
 }
 #home{
-    height:800px;
+    height: 100vh;
+    background-color:#457fca;
+    -webkit-animation: random 30s infinite;
+    animation:random 30s infinite;
+    animation-iteration-count: 4;
+    background-size:cover;
+}
+@keyframes random{
+    15% { background:linear-gradient(to right,#457fca,#457fca)} 
+    30% { background:linear-gradient(to right,darkcyan,grey);  } 
+    45% {  background:linear-gradient(to right,#3a6186,#89253e); } 
+    60% { background:linear-gradient(to right,#00B4DB,#004e92); }
+    75% { background:linear-gradient(to right,#C04848,#89216B); }  
+    85% { background:linear-gradient(to right,#108dc7,#ef8e38); } 
+    100% { background:linear-gradient(to right,#ad5389,#243B55); } 
 }
 
-#glow{
-    letter-spacing: 6px;
-    float: center;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; 
-    cursor: pointer
-    
+.navbar_text {
+    font-family: hominis,arial;
+    font-size: medium;
 }
-#glow:hover{
-    letter-spacing:30px;
+
+.itext_container{
+    text-align: center;
+}
+
+#profile_text {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#profile_text p{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: courier New,arial;
+}
+
+#profile_text_first, #profile_text_third {
+    font-size: 5rem;
+    margin-left: 2rem;
+}
+
+#profile_text_second, #profile_text_four {
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    margin-top:2rem;
+}
+
+.info_text {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.info_text p {
+    display: inline-block;
+    vertical-align: top;
+    font-family: times new roman,arial,hominis;
+}
+
+#info_inner_text {
+    color: white;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.info_me {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: verdana,arial;
+}
+
+#info_inner_me {
+    color: white;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.info_me p {
+    display: inline-block;
+    vertical-align: top;
+    font-family: times new roman,arial,hominis;
+}
+
+
+@media screen and (max-width: 1023px) {
+    #profile_img {
+        width: 50%;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    #profile_text{
+        letter-spacing: 6px;
+        float: center;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease; 
+        cursor: pointer   
+    }
+
+    #profile_text:hover{
+        letter-spacing:10px;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+    #profile_img {
+        width: 15%;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    #profile_text{
+        letter-spacing: 6px;
+        float: center;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease; 
+        cursor: pointer   
+    }
+
+    #profile_text:hover{
+        letter-spacing:30px;
+    }
 }
 
 #font2{
@@ -87,10 +165,4 @@
 #font3{
 text-align: center;
 margin-top:70px;
-
-}
-
-#font4{
-    letter-spacing: 2px;
-    margin-top:60px;
 }
